@@ -1,0 +1,132 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.padre {
+  display: flex;
+  flex-flow: column nowrap;
+}
+/*  --------- Colores de menu y Header ----- */
+.header {
+  background: #000;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.menu {
+  background: #2d4059;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  align-items: center;
+}
+
+.logo {
+  background: #ea5455;
+  flex: 1 1 auto;
+  height: 30px;
+}
+
+.nav {
+  background: #ea5455;
+  flex: 5 1 auto;
+  height: 30px;
+}
+
+.social {
+  background: #ea5455;
+  flex: 1 1 auto;
+  height: 30px;
+}
+
+/* *********colores para texto principal********* */
+
+.texto-principal {
+  background: #f76922;
+}
+h1 {
+  background: #ffd460;
+}
+
+/* -----------Colores para Section y articulos----------- */
+.section {
+  background: #000;
+  display: flex;
+}
+.articulos {
+  background: #3d3d50;
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.article {
+  background: #17578f;
+  flex: 1 1 40%;
+}
+
+.navegacion {
+  background: #539ecf;
+  flex: 1 1 100%;
+}
+
+/* -----------Colores para aside y publicidad----------- */
+
+.aside {
+  background: #e41c30;
+  flex: 1 1 auto;
+}
+
+.publicidad {
+  background: #e6d686;
+}
+
+/* -----------Colores para footer y pie----------- */
+
+.footer {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie {
+  background: #efae18;
+  width: 100%;
+}
+
+@media all and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .logo,
+  .nav,
+  .social {
+    width: 100%;
+  }
+
+  .aside {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .articulos {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .aside {
+    flex-direction: column;
+  }
+}
